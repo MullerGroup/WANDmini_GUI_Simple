@@ -309,9 +309,9 @@ if __name__ == "__main__":
     # test for connection with board
     if not(WANDminiComm.writeReg(cp2130Handle,0,0x0F,0xBEEF)):
         # quit program if no connection found
-        print('Could not find FlexEMG board, exiting!')
+        print('Could not find WANDmini, exiting!')
     else:
-        print('Successfully connected to FlexEMG board!')
+        print('Successfully connected to WANDmini!')
         # main application instance
         app = QApplication([])
 
